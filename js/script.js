@@ -32,7 +32,8 @@ const api_url = "https://api.covid19api.com/summary";
       function displayData(c, tc, td, nc, nd, t) {
         let pre = document.createElement("pre");
         console.log(tc);
-        pre.innerHTML = `<span>Country Name: </span> ${c}\n<span>Date: </span> ${t} \n<span>Total Cases: </span> ${tc} \n<span>Total Deaths: </span>${td} \n<span>New Cases: </span>${nc} \n<span>New Deaths: </span>${nd}`;
+        
+        pre.innerHTML = `<span>Country Name:</span> ${c}\n<span>Date: </span>${t}\n<span>Total Cases: </span>${tc} \n<span>Total Deaths: </span>${td} \n<span>New Cases: </span>${nc} \n<span>New Deaths: </span>${nd}`;
 
         document.getElementById("myDiv").appendChild(pre);
       }
